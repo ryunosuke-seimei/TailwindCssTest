@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Training House</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <meta http-equiv="refresh" content="5; URL="> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style media="screen">
+    .title {
+      font-family: 'Koulen', cursive;
+    }
+
+    main {
+      font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="h-14 flex justify-between items-center border-b-4 border-gray-500">
+    <div class="title flex flex-row justify-around items-center h-full">
+      <span class="block h-12 w-14 overflow-hidden">
+        <img src="images/muscle.jpg" class="object-contain" alt="">
+      </span>
+      <span class="block text-2xl">Training HOUSE</span>
+    </div>
+    <div class="setting h-9 w-9  rounded-full border border-gray-400 mr-4">
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" class="object-cover" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <path strokeLinecap="round" strokeLinejoin="round"
+          d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+    </div>
+  </header>
+
+  <main class="mt-5 flex w-full h-screen justify-around">
+
+    <div class="w-3/16 max-w-md p-4 my-15 flex flex-col items-center space-y-5 shadow-sm flex-grow">
+
+      <div class="w-9/12 p-2 h-50 border-2 border-gray-500">
+        <div class="flex w-full space-x-5 items-center">
+          <span class="block w-10 h-10 rounded-full overflow-hidden ring ring-blue-400"> <img src="images/human.jpg" class="overfit-cover object-bottom" alt=""> </span>
+          <span class="block flex-grow text-2xl">一ノ瀬　桜子</span>
+        </div>
+        <div class="grid grid-col-2 my-2">
+          <span class="block">最終トレーニング日</span>
+          <span class="block">2日前</span>
+          <span class="block">最終記録日時</span>
+          <span class="block">5/11 08:55</span>
+          <div class="col-span-2 flex justify-around space-x-2">
+            <div class="block h-full w-1/2">
+              <span class="block flex justify-center items-center border border-blus-100 rounded-md bg-blue-400 text-white py-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 block" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm9 4a1 1 0 10-2 0v6a1 1 0 102 0V7zm-3 2a1 1 0 10-2 0v4a1 1 0 102 0V9zm-3 3a1 1 0 10-2 0v1a1 1 0 102 0v-1z" clip-rule="evenodd" />
+                </svg>
+                <span class="block">チャート</span>
+              </span>
+            </div>
+
+            <div class="block h-full w-1/2">
+              <span class="block flex justify-center items-center border border-blus-100 rounded-md bg-green-400 text-white py-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="block">詳細</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-9/12 p-2 h-50 border-2 border-gray-500">
+        <div class="flex w-full space-x-5 items-center">
+          <span class="block w-10 h-10 rounded-full overflow-hidden ring ring-blue-400"> <img src="images/human.jpg" class="overfit-cover object-bottom" alt=""> </span>
+          <span class="block flex-grow text-2xl">松村芽衣</span>
+        </div>
+        <div class="grid grid-col-2 my-2">
+          <span class="block">最終トレーニング日</span>
+          <span class="block">2日前</span>
+          <span class="block">最終記録日時</span>
+          <span class="block">5/11 08:55</span>
+          <div class="col-span-2 flex justify-around space-x-2">
+            <div class="block h-full w-1/2">
+              <span class="block flex justify-center items-center border border-blus-100 rounded-md bg-blue-400 text-white py-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 block" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm9 4a1 1 0 10-2 0v6a1 1 0 102 0V7zm-3 2a1 1 0 10-2 0v4a1 1 0 102 0V9zm-3 3a1 1 0 10-2 0v1a1 1 0 102 0v-1z" clip-rule="evenodd" />
+                </svg>
+                <span class="block">チャート</span>
+              </span>
+            </div>
+
+            <div class="block h-full w-1/2">
+              <span class="block flex justify-center items-center border border-blus-100 rounded-md bg-green-400 text-white py-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="block">詳細</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-9/12 p-2 h-50 border-2 border-gray-500">
+        <div class="flex w-full space-x-5 items-center">
+          <span class="block w-10 h-10 rounded-full overflow-hidden ring ring-blue-400"> <img src="images/human.jpg" class="overfit-cover object-bottom" alt=""> </span>
+          <span class="block flex-grow text-2xl">久世義文</span>
+        </div>
+        <div class="grid grid-col-2 my-2">
+          <span class="block">最終トレーニング日</span>
+          <span class="block">2日前</span>
+          <span class="block">最終記録日時</span>
+          <span class="block">5/11 08:55</span>
+          <div class="col-span-2 flex justify-around space-x-2">
+            <div class="block h-full w-1/2">
+              <span class="block flex justify-center items-center border border-blus-100 rounded-md bg-blue-400 text-white py-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 block" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm9 4a1 1 0 10-2 0v6a1 1 0 102 0V7zm-3 2a1 1 0 10-2 0v4a1 1 0 102 0V9zm-3 3a1 1 0 10-2 0v1a1 1 0 102 0v-1z" clip-rule="evenodd" />
+                </svg>
+                <span class="block">チャート</span>
+              </span>
+            </div>
+
+            <div class="block h-full w-1/2">
+              <span class="block flex justify-center items-center border border-blus-100 rounded-md bg-green-400 text-white py-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="block">詳細</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-9/12 p-2 h-50 border-2 border-gray-500">
+        <div class="flex w-full space-x-5 items-center">
+          <span class="block w-10 h-10 rounded-full overflow-hidden ring ring-blue-400"> <img src="images/human.jpg" class="overfit-cover object-bottom" alt=""> </span>
+          <span class="block flex-grow text-2xl">相津せいら</span>
+        </div>
+        <div class="grid grid-col-2 my-2">
+          <span class="block">最終トレーニング日</span>
+          <span class="block">2日前</span>
+          <span class="block">最終記録日時</span>
+          <span class="block">5/11 08:55</span>
+          <div class="col-span-2 flex justify-around space-x-2">
+            <div class="block h-full w-1/2">
+              <span class="block flex justify-center items-center border border-blus-100 rounded-md bg-blue-400 text-white py-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 block" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm9 4a1 1 0 10-2 0v6a1 1 0 102 0V7zm-3 2a1 1 0 10-2 0v4a1 1 0 102 0V9zm-3 3a1 1 0 10-2 0v1a1 1 0 102 0v-1z" clip-rule="evenodd" />
+                </svg>
+                <span class="block">チャート</span>
+              </span>
+            </div>
+
+            <div class="block h-full w-1/2">
+              <span class="block flex justify-center items-center border border-blus-100 rounded-md bg-green-400 text-white py-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="block">詳細</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-12/16 p-4 my-15 flex-grow max-x-md">
+      <div class="w-10/12 mx-auto p-2 h-50 border-2 border-gray-500 flex justify-center items-center space-x-5 flex-wrap">
+        <span class="block w-20 h-10 w-1/2 rounded-full overflow-hidden ring ring-blue-400"> <img src="images/human.jpg" class="overfit-cover object-bottom" alt=""> </span>
+        <span class="block text-2xl w-1/2 text-center">一ノ瀬　桜子</span>
+
+        <div class="flex w-3/4 items-center my-5 space-x-3">
+          <div class="flex w-1/3 flex-col py-4 rounded-md justify-center border border-gray-400">
+            <span class="block text-center font-semibold">目標体重</span>
+            <span class="block text-center text-2xl">85.2kg</span>
+          </div>
+          <div class="flex w-1/3 flex-col py-4 rounded-md justify-center border border-gray-400">
+            <span class="block text-center font-semibold">身長</span>
+            <span class="block text-center text-2xl">172cm</span>
+          </div>
+          <div class="flex w-1/3 flex-col py-4 rounded-md justify-center border border-gray-400">
+            <span class="block text-center font-semibold">目標摂取カロリー</span>
+            <span class="block text-center text-2xl">2400kcal</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-10/12 mx-auto p-2 h-50 border-2 border-gray-500 flex justify-center items-center space-x-5 flex-wrap my-4">
+        <div class="w-4/5 rounded-lg overflow-hidden">
+          <div class="py-3 px-5 bg-gray-50">体重遷移</div>
+          <canvas class="p-10" id="chartLine"></canvas>
+        </div>
+      </div>
+
+      <div class="w-10/12 mx-auto p-2 h-50 border-2 border-gray-500 flex justify-center items-center space-x-5 flex-wrap my-4">
+        <div class="w-4/5 rounded-lg overflow-hidden">
+          <div class="py-3 px-5 bg-gray-50">栄養素管理</div>
+          <div class="py-3 px-5 bg-gray-50">
+            <div class="relative">
+              <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <input datepicker type="text"
+                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Select date">
+            </div>
+          </div>
+          <canvas class="p-10" id="chartBar"></canvas>
+        </div>
+      </div>
+
+
+    </div>
+
+    <script>
+      const labels = ["2022/5/5", "2022/5/6", "2022/5/7", "2022/5/8", "2022/5/9", "2022/5/10"];
+      const data = {
+        labels: labels,
+        datasets: [{
+          label: "Weight Data per day",
+          backgroundColor: "hsl(252, 82.9%, 67.8%)",
+          borderColor: "hsl(252, 82.9%, 67.8%)",
+          data: [85.2, 84.9, 84.6, 84.2, 84.1, 83.7, 83.7],
+        }, ],
+      };
+
+      const configLineChart = {
+        type: "line",
+        data,
+        options: {},
+      };
+
+      let chartLine = new Chart(
+        document.getElementById("chartLine"),
+        configLineChart
+      );
+
+      const labelsBarChart = [
+        "P",
+        "F",
+        "C"
+      ];
+      const dataBarChart = {
+        labels: labelsBarChart,
+        datasets: [{
+          label: "PFC data",
+          backgroundColor: "hsl(252, 82.9%, 67.8%)",
+          borderColor: "hsl(252, 82.9%, 67.8%)",
+          data: [133, 76, 291],
+        }, ],
+      };
+
+      const configBarChart = {
+        type: "bar",
+        data: dataBarChart,
+        options: {},
+      };
+
+      let chartBar = new Chart(
+        document.getElementById("chartBar"),
+        configBarChart
+      );
+    </script>
+
+    <!-- 布川亨（ぬのかわとおる）
+    鈴木あきら
+    鬼頭由紀
+    松村芽衣
+    金崎里穂
+    久世義文
+    手島正也
+    磯貝洋亮
+    田之上彩純（たのうえますみ）
+    相津せいら -->
+
+
+
+  </main>
+</body>
+
+</html>
